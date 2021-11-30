@@ -4,7 +4,7 @@
 
 ## Usage
 
-See example.cpp
+See [example.cpp](/example.cpp)
 
 ## Requirements
 
