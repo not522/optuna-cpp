@@ -1,16 +1,16 @@
 # optuna-cpp
 
-Optuna C++ binding using Optuna's CLI.
+[Optuna](https://github.com/optuna/optuna) C++ binding using Optuna's CLI.
 
-# Usage
+## Usage
 
 See example.cpp
 
-# Requirements
+## Requirements
 
 Optuna 2.10 or newer.
 
-# LICENSE
+## LICENSE
 
 MIT License
 
