@@ -30,4 +30,7 @@ int main() {
               << trial.param<int>("y") << " "
               << trial.value << std::endl;
   }
+
+  const optuna::FrozenTrial best_trial = study.best_trial();
+  std::cout << best_trial.number << " " << best_trial.value << std::endl;
 }
