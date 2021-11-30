@@ -6,6 +6,10 @@ Optuna C++ binding using Optuna's CLI.
 
 See example.cpp
 
+# Requirements
+
+Optuna 2.10 or newer.
+
 # LICENSE
 
 MIT License
