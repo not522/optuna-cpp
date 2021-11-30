@@ -11,10 +11,10 @@ int main() {
   search_space.add_float("y", -10, 10);
 
   for (int i = 0; i < 10; ++i) {
-    auto trial = study.ask(search_space);
-    auto c = trial.param<std::string>("c");
-    auto x = trial.param<double>("x");
-    auto y = trial.param<double>("y");
+    optuna::Trial trial = study.ask(search_space);
+    std::string c = trial.param<std::string>("c");
+    double x = trial.param<double>("x");
+    double y = trial.param<double>("y");
     if (c == "a") {
       study.tell(trial, x * x + y * y);
     } else {
@@ -22,7 +22,7 @@ int main() {
     }
   }
 
-  for (const auto &trial : study.trials()) {
+  for (const optuna::FrozenTrial &trial : study.trials()) {
     std::cout << trial.number << " "
               << trial.state << " "
               << trial.param<std::string>("c") << " "
